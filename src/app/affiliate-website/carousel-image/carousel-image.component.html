@@ -1,0 +1,118 @@
+ <!-- carousel start -->
+ <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" *ngFor="let carouselImg of carousel">
+    <div class="carousel-item active"  data-bs-interval="10000">
+      <img src="{{carouselImg.img}}" class="d-block w-100" alt="...">
+     </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{{carouselImg.img1}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{carouselImg.img2}}" class="d-block w-100" alt="...">
+    </div>
+    <!-- card start -->
+   <div class="container-fluid cardImg">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col-md-3">
+        <div class="card h-100 kitchen">
+          <p class="mobiles">Up to 40% off | Mobiles & accessories</p>
+          <img src="{{carouselImg.img3}}" class="card-img-top" alt="...">
+  <a href="">see all deals</a>
+         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 kitchen">
+ <!-- two card start -->
+ <h5>Up to 60% off | Electronics & accessories</h5>
+ <div class="row row-cols-1 row-cols-md-2 g-3">
+  <div class="col">
+    <div class="card">
+    <a href="" class="latest">  <img src="{{carouselImg.img4}}" class="card-img-top" alt="...">
+            up to 30000 off | Laptop </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <a href="" class="latest"> <img src="{{carouselImg.img5}}" class="card-img-top" alt="...">
+                up to 70% off | Headphone & speaker </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <a href="" class="latest"> <img src="{{carouselImg.img6}}" class="card-img-top" alt="...">
+              up to 60% off | smartwatches</a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <a href="" class="latest"> <img src="{{carouselImg.img7}}" class="card-img-top" alt="...">
+      up to 45% off | tablets </a>
+    </div>
+  </div>
+</div>
+ <!-- two card end -->
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 kitchen">
+          <!-- two card start  -->
+          <h5>Up to 55% off | Best-selling TVs </h5>
+ <div class="row row-cols-1 row-cols-md-2 g-3">
+  <div class="col">
+    <div class="card">
+    <a href="" class="latest">  <img src="{{carouselImg.img8}}" class="card-img-top" alt="...">
+      Latest launches in TVs | Up to 45% off
+        </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <a href="" class="latest"> <img src="{{carouselImg.img9}}" class="card-img-top" alt="...">
+
+Starting ₹6,999/- | Washing machines
+  </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <a href="" class="latest"> <img src="{{carouselImg.img10}}" class="card-img-top" alt="...">
+      Starting ₹8,099 | All TVs
+     </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <a href="" class="latest"> <img src="{{carouselImg.img11}}" class="card-img-top" alt="...">
+
+Starting ₹6,790 | Refrigerators
+  </a>
+    </div>
+  </div>
+</div>
+          <!-- two card end -->
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 kitchen">
+          <div class="card-body">
+            <h5 class="card-title">Shop on the Amazon App</h5>
+            <p class="card-text"> Fast, convenient and secure | Over 17 crore products in your pocket</p>
+          </div>
+          <img src="{{carouselImg.img12}}" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+   </div>
+    <!-- card end -->
+  </div>
+  <button class="carousel-control-prev preCarousel" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next nextCarousel" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- carousel end -->
+

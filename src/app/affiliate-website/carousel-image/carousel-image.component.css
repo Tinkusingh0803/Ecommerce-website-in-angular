@@ -1,0 +1,28 @@
+.preCarousel{
+margin-bottom: 25em;
+/* margin-right: 80px; */
+}
+.nextCarousel{
+margin-bottom: 25em;
+
+}
+.cardImg{
+  margin-top: 270px;
+}
+ .mobiles{
+   font-size: larger;
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+.latest{
+  font-size: small;
+}
+.kitchen{
+  padding: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}

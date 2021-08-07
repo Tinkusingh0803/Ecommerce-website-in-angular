@@ -1,0 +1,34 @@
+#header{
+  background-color: rgb(51, 51, 51);
+  padding: 3px;
+}
+.logo{
+  color: white;
+}
+.createStore{
+  color: white;
+}
+.rowAllstore{
+  margin-top: 14px;
+}
+.navbarManu{
+  background-color: #222f3e;
+ }
+.navbarManu a{
+  color: white;
+}
+.allMenuBar li{
+  margin-left: 10px;
+}
+.allMenuBar li a:hover{
+color: rgb(228, 213, 213);
+ }
+ .greatVestival{
+   text-decoration: none;
+   font-size: x-large;
+   font-weight: bold;
+   font-family:'Times New Roman', Times, serif;
+ }
+ .greatVestival:hover{
+   border: 1px solid white;
+ }

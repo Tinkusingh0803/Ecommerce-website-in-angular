@@ -1,0 +1,21 @@
+.mobiles{
+  font-size: larger;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.latest{
+ font-size: small;
+}
+.cardAll{
+  margin-top: 40px;
+  background-color: rgb(224, 224, 224);
+}
+.kitchen{
+  padding: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
