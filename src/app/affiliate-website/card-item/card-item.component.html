@@ -285,3 +285,56 @@
 
   </div>
 </div>
+
+
+<div class="carousel">
+  <h4 class="blockBuster">5th-9th Aug | Great Freedom Festival <span class="seeAllDeals"> <a href="#">see all deals</a> </span></h4>
+  <p-carousel [value]="sarii" styleClass="custom-carousel" [numVisible]="5" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+   </ng-template>
+   <ng-template let-product pTemplate="item">
+     <div class="product-item">
+       <div class="product-item-content">
+         <div class="p-mb-3">
+        </div>
+        <div>
+          <a href=""><img src="{{product.imgLink}}" alt=""></a>
+           <div class="car-buttons p-mt-5">
+            <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
+            <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star"></p-button>
+            <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
+
+
+<div class="carousel">
+
+  <h4 class="blockBuster">5th-9th Aug | Great Freedom Festival <span class="seeAllDeals"> <a href="#">see all deals</a> </span></h4>
+  <p-carousel [value]="exercise" styleClass="custom-carousel" [numVisible]="5" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+   </ng-template>
+   <ng-template let-product pTemplate="item">
+     <div class="product-item">
+       <div class="product-item-content">
+         <div class="p-mb-3">
+        </div>
+        <div>
+          <a href=""><img src="{{product.imgLink}}" alt=""></a>
+           <div class="car-buttons p-mt-5">
+            <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
+            <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star"></p-button>
+            <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+
+</div>
+

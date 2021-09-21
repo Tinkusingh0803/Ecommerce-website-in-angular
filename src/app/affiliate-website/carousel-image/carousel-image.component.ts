@@ -9,9 +9,13 @@ export class CarouselImageComponent implements OnInit {
 
     carousel=[
       {
-    img: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Aug21_ART/Vivo_Updated2/Amazon_GRD_DesktopTemplate_1500x600-Wireless.psd._CB645459230_.jpg",
-    img1: "https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/AugART21/GW/NEW/HERO/PCshopnow/AugART21_PC_hero_1x_Shopnow._CB645150438_.jpg",
-    img2: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL_HMT/PCAUGART/Hero_1_1500x600._CB645428001_.jpg",
+    img: "https://m.media-amazon.com/images/I/61Ht5F14wVL._SX3000_.jpg",
+    img1: "https://m.media-amazon.com/images/I/71FzQCchyoL._SX3000_.jpg",
+    img2: "https://m.media-amazon.com/images/I/614KxitvEpL._SX3000_.jpg",
+    img13: "https://m.media-amazon.com/images/I/61r7T5GApGL._SX3000_.jpg",
+    img14: "https://m.media-amazon.com/images/I/6167OQeLNPL._SX3000_.jpg",
+    img15: "https://m.media-amazon.com/images/I/61hzCXFkLXL._SX3000_.jpg",
+    img16: "https://m.media-amazon.com/images/I/617KUu4TJkL._SX3000_.jpg",
     img3: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/AugART2021/DesktopGateway_CategoryCard_758X6081._SY304_CB645431419_.jpg",
     img4: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/AugArt/GW/xcm_banners_dqc_1_186x116_in-en._SY116_CB645422465_.jpg",
     img5: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/AugArt/GW/xcm_banners_dqc_2_186x116_in-en._SY116_CB645422489_.jpg",

@@ -1,0 +1,42 @@
+#footer{
+  background-color: #232F3E;
+  margin-top: 30px;
+  padding: 50px;
+
+}
+.know li{
+list-style-type: none;
+
+}
+.know li a{
+  color: white;
+text-decoration: none;
+opacity: 0.8;
+font-size: small;
+}
+.know h5{
+  color: white;
+  font-weight: bold;
+}
+.hrClass{
+  color: white;
+  margin-top: 30px;
+}
+#subFooter{
+  background-color: rgb(17, 17, 17);
+  padding: 40px;
+text-align: center;
+}
+#subFooter p a{
+  color: white;
+  text-decoration: none;
+  font-size: small;
+}
+#subFooter p a:hover{
+  color: rgb(247, 107, 107);
+  text-decoration: underline;
+  font-size: small;
+}
+#subFooter p{
+  color: white;
+}

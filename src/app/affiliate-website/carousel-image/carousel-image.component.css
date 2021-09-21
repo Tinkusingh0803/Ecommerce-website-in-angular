@@ -26,3 +26,52 @@ a{
 a:hover{
   color: red;
 }
+.displayHide{
+  display: block;
+}
+@media(max-width: 768px){
+  .preCarousel{
+    margin-bottom: 132px;
+    /* margin-right: 80px; */
+    }
+    .nextCarousel{
+      margin-bottom: 132px;
+
+      }
+      .cardImg{
+        margin-top: 130px;
+      }
+       .mobiles{
+         font-size: larger;
+         font-weight: bold;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+      .latest{
+        font-size: small;
+      }
+      .kitchen{
+        padding: 25px;
+        /* display: none; */
+      }
+      .displayHide{
+        display: none;
+      }
+}
+@media(max-width: 1024px){
+  .cardImg{
+    margin-top: 170px;
+  }
+}
+@media(min-width:345px) and (max-width:645px){
+  .cardImg{
+    margin-top: 100px;
+  }
+  .preCarousel{
+    margin-bottom: 112px;
+    /* margin-right: 80px; */
+    }
+    .nextCarousel{
+    margin-bottom: 112px;
+
+    }
+}

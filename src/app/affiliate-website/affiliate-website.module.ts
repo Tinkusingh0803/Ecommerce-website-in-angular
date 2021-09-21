@@ -14,6 +14,12 @@ import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductService } from './card-item/productservice';
+import { FooterComponent } from './footer/footer.component';
+
+import { SlideMenuModule } from 'primeng/slidemenu';
+import { VideoCardComponent } from './video-card/video-card.component';
+import { VideoCardService } from './video-card/productservice';
+
 
   @NgModule({
   declarations: [
@@ -21,7 +27,10 @@ import { ProductService } from './card-item/productservice';
     HeaderComponent,
     CarouselImageComponent,
     CardsImageComponent,
-    CardItemComponent
+    CardItemComponent,
+    FooterComponent,
+    VideoCardComponent,
+
   ],
   imports: [
     CommonModule,
@@ -32,14 +41,16 @@ import { ProductService } from './card-item/productservice';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SlideMenuModule
   ],
   exports: [
     AffiliateWebsiteComponent,
     HeaderComponent,
     CarouselImageComponent,
-    CardItemComponent
+    CardItemComponent,
+    FooterComponent
   ],
-  providers: [ProductService]
+  providers: [ProductService,VideoCardService]
 })
 export class AffiliateWebsiteModule { }
