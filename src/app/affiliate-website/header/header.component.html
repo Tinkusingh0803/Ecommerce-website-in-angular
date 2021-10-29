@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row rowAllstore">
       <div class="col-md-2">
-        <a href="#" class="navbar-brand logo">Tinku Shop</a>
+        <a  routerLink="homePage" class="navbar-brand logo">Tinku Shop</a>
       </div>
       <div class="col-md-8">
         <div class="input-group mb-3">
@@ -87,10 +87,10 @@
           </li> -->
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Pet Supplies</a>
+            <a class="nav-link" routerLink="petSuppliers">Pet Supplies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gift Cards</a>
+            <a class="nav-link" routerLink="giftcard">Gift Cards</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Gift Ideas</a>
@@ -108,3 +108,4 @@
   </nav>
   <!-- navbar end -->
 </div>
+<router-outlet></router-outlet>

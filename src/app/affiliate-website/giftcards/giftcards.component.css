@@ -1,0 +1,64 @@
+.backColor{
+  background-color: rgb(236, 235, 235);
+padding: 0;
+}
+.navbar-nav li a{
+  color: black;
+/* font-weight: bold; */
+opacity: 0.8;
+/* font-family: 'Courier New', Courier, monospace; */
+
+}
+.navbar-nav{
+  padding: 0;
+}
+.navbar-nav li a:hover{
+  color: rgb(247, 10, 10);
+/* font-weight: bold; */
+opacity: 0.8;
+text-decoration: underline;
+
+/* font-family: 'Courier New', Courier, monospace; */
+
+}
+.cardStore{
+  text-align: center;
+  margin-top: 20px;
+  font-size: small;
+}
+.imgPadding{
+  padding: 10px;
+}
+.cardsItemsPad{
+  margin-top: 30px;
+}
+.karwachauth h3{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.giftOpetion{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.giftCardsBest{
+  margin-top: 30px;
+}
+
+.understand{
+margin-left: 30%;
+margin-top: 50px;
+border: 2px solid rgb(211, 210, 210);
+margin-right: 39%;
+padding: 5px;
+}
+.understand h4{
+  background-color: rgb(209, 208, 208);
+padding: 5px;
+}
+
+.understand p{
+  font-weight: bold;
+}

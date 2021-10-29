@@ -1,0 +1,37 @@
+.headerPadding{
+  margin: 0;
+  padding: 0;
+
+}
+.allPets{
+  text-align: center;
+  margin-top: 30px;
+font-size: larger;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bolder;
+font-style: italic;
+font-stretch: wider;
+text-transform:capitalize;
+}
+hr{
+  width: 100px;
+margin-left: 45%;
+color:rgb(255, 0, 0);
+height: 4px;
+}
+.hoverMenu a{
+color: rgb(0, 0, 0);
+font-weight: bold;
+
+
+}
+.hoverMenu a:hover{
+   font-weight: bold;
+  color: rgb(255, 0, 0);
+  /* text-decoration: underline; */
+  border-bottom: 2px solid rgb(255, 0, 0);
+  }
+  .offers h3{
+   margin-left: 140px;
+   margin-top: 40px;
+  }
