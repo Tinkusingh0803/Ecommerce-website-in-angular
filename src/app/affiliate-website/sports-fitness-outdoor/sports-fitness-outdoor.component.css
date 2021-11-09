@@ -1,0 +1,17 @@
+.sports{
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+.sportsmen ul li a{
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: small;
+font-weight:500;
+color: black;
+
+}
+.sportsmen ul li a:hover{
+  color: red;
+  text-decoration: underline;
+
+}

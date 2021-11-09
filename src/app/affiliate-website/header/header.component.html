@@ -21,68 +21,71 @@
       </div>
     </div>
   </div>
+</div>
 
   <!-- navbar start -->
-  <nav class="navbar navbar-expand-lg navbarManu p-0">
-    <div class="container-fluid">
-      <!--  -->
+  <div class="sticky">
+
+    <nav class="navbar navbar-expand-lg navbarManu p-0">
+      <div class="container-fluid">
+        <!--  -->
       <a
-        class="btn btn-primary"
-        data-bs-toggle="offcanvas"
-        href="#offcanvasExample"
-        role="button"
-        aria-controls="offcanvasExample"
+      class="btn btn-primary"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
       >
         <span><i class="fas fa-bars"></i></span>All
       </a>
 
       <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
       >
-        <div class="offcanvas-header">
-          <h4>Trading</h4>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="bestSellers">
-            <li><a href="#">Best Sellers</a></li>
-            <li><a href="#">New Releases</a></li>
-            <li><a href="#">Movers and Shakers</a></li>
-          </ul>
-          <hr>
-          <h4>Digital Content And Devices</h4>
-          <p-slideMenu [model]="items" effectDuration="300" easing="ease-in" [viewportHeight]="500"></p-slideMenu>
-
-        </div>
-      </div>
-      <!--  -->
-      <button
-        class="navbar-toggler"
+      <div class="offcanvas-header">
+        <h4>Trading</h4>
+        <button
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="iconColor"> <i class="pi pi-align-justify"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 allMenuBar">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              >Buy Again</a
-            >
-          </li>
-          <!-- <li class="nav-item">
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="bestSellers">
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">New Releases</a></li>
+          <li><a href="#">Movers and Shakers</a></li>
+        </ul>
+        <hr>
+        <h4>Digital Content And Devices</h4>
+        <p-slideMenu [model]="items" effectDuration="300" easing="ease-in" [viewportHeight]="500"></p-slideMenu>
+
+      </div>
+    </div>
+    <!--  -->
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    >
+    <span class="iconColor"> <i class="pi pi-align-justify"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 allMenuBar">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"
+        >Buy Again</a
+        >
+      </li>
+      <!-- <li class="nav-item">
             <a class="nav-link" href="#">Amazon Pay</a>
           </li> -->
 
@@ -93,10 +96,10 @@
             <a class="nav-link" routerLink="giftcard">Gift Cards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gift Ideas</a>
+            <a class="nav-link" routerLink="giftidea">Gift Ideas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sports Fitness & Outdoors</a>
+            <a class="nav-link"  routerLink="sportfitness">Sports Fitness & Outdoors</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Home Improvement</a>

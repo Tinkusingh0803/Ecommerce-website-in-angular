@@ -336,7 +336,7 @@ export class CarouselImageComponent implements OnInit {
 
     carousel=[
       {
-    img: "https://m.media-amazon.com/images/I/61Dbkr6BXwL._SX1500_.jpg",
+    img: "https://m.media-amazon.com/images/I/61gT9ZEeJgL._SX1500_.jpg",
     img1: "https://m.media-amazon.com/images/I/71FzQCchyoL._SX3000_.jpg",
     img2: "https://m.media-amazon.com/images/I/614KxitvEpL._SX3000_.jpg",
     img13: "https://m.media-amazon.com/images/I/61r7T5GApGL._SX3000_.jpg",

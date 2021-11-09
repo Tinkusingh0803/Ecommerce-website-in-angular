@@ -335,12 +335,12 @@ export class AppComponent {
 
     carousel=[
       {
-    img: "https://m.media-amazon.com/images/I/61Ht5F14wVL._SX3000_.jpg",
-    img1: "https://m.media-amazon.com/images/I/71FzQCchyoL._SX3000_.jpg",
-    img2: "https://m.media-amazon.com/images/I/614KxitvEpL._SX3000_.jpg",
+    img: "https://m.media-amazon.com/images/I/811w0YGZg6L._SX3000_.jpg",
+    img1: "https://m.media-amazon.com/images/I/71C0lHeYltL._SX3000_.jpg",
+    img2: "https://m.media-amazon.com/images/I/71twYEgl94L._SX3000_.jpg",
     img13: "https://m.media-amazon.com/images/I/61r7T5GApGL._SX3000_.jpg",
-    img14: "https://m.media-amazon.com/images/I/6167OQeLNPL._SX3000_.jpg",
-    img15: "https://m.media-amazon.com/images/I/61hzCXFkLXL._SX3000_.jpg",
+    img14: "https://m.media-amazon.com/images/I/71lbm+1JyNL._SX3000_.jpg",
+    img15: "https://m.media-amazon.com/images/I/71VCHx-ZvdL._SX3000_.jpg",
     img16: "https://m.media-amazon.com/images/I/617KUu4TJkL._SX3000_.jpg",
     img3: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/AugART2021/DesktopGateway_CategoryCard_758X6081._SY304_CB645431419_.jpg",
     img4: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/AugArt/GW/xcm_banners_dqc_1_186x116_in-en._SY116_CB645422465_.jpg",

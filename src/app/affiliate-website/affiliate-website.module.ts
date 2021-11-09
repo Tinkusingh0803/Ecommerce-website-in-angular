@@ -26,6 +26,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { AllAvailableComponent } from './pet-supplies/all-available/all-available.component';
 import { UpcommingComponent } from './pet-supplies/upcomming/upcomming.component';
 import { GiftcardsComponent } from './giftcards/giftcards.component';
+import { GiftIdeasComponent } from './gift-ideas/gift-ideas.component';
+import { SportsFitnessOutdoorComponent } from './sports-fitness-outdoor/sports-fitness-outdoor.component';
   @NgModule({
   declarations: [
     AffiliateWebsiteComponent,
@@ -38,6 +40,8 @@ import { GiftcardsComponent } from './giftcards/giftcards.component';
     AllAvailableComponent,
     UpcommingComponent,
     GiftcardsComponent,
+    GiftIdeasComponent,
+    SportsFitnessOutdoorComponent,
 
   ],
   imports: [

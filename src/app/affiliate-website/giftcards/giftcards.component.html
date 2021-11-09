@@ -9,7 +9,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">X</span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -638,11 +638,22 @@
   <form action="" class="understand">
 <h4>Please help us understand you better.</h4>
 <p >Did you find the above information helpful</p>
-<input type="radio" name="yes"> Yes <br>
-<input type="radio" name="yes"> No
+<div class="form-check">
+<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label" for="flexRadioDefault1">
+  Yes
+</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    No
+  </label>
+
+</div>
 <p>what other infomation would you like to know</p>
 <textarea cols="60" rows="2"></textarea>
-<br>
 <!-- <input class="btn btn-primary" type="submit" (click)="myfun1()"> -->
 <button class="btn btn-primary" (click)="myFun()">submit</button>
 </form>
+
