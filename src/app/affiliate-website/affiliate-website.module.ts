@@ -28,6 +28,7 @@ import { UpcommingComponent } from './pet-supplies/upcomming/upcomming.component
 import { GiftcardsComponent } from './giftcards/giftcards.component';
 import { GiftIdeasComponent } from './gift-ideas/gift-ideas.component';
 import { SportsFitnessOutdoorComponent } from './sports-fitness-outdoor/sports-fitness-outdoor.component';
+import { BabyComponent } from './baby/baby.component';
   @NgModule({
   declarations: [
     AffiliateWebsiteComponent,
@@ -42,6 +43,7 @@ import { SportsFitnessOutdoorComponent } from './sports-fitness-outdoor/sports-f
     GiftcardsComponent,
     GiftIdeasComponent,
     SportsFitnessOutdoorComponent,
+    BabyComponent,
 
   ],
   imports: [
