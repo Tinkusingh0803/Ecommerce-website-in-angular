@@ -6,3 +6,22 @@
 .baby{
    font-size: small;
 }
+.activity li a{
+  font-size: 13px;
+text-decoration: none;
+color: black;
+}
+.activity li{
+  list-style-type:none;;
+margin-left: 10px;
+margin-top: 5px;
+}
+.activity{
+border-right: 2px solid rgb(156, 149, 149);
+  margin-left: 20px;
+}
+.activity li a:hover{
+  font-size: 13px;
+text-decoration: none;
+color: rgb(247, 84, 44);
+}
