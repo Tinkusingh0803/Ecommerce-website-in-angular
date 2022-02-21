@@ -18,10 +18,19 @@ margin-top: 5px;
 }
 .activity{
 border-right: 2px solid rgb(156, 149, 149);
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .activity li a:hover{
   font-size: 13px;
 text-decoration: none;
 color: rgb(247, 84, 44);
 }
+.diaper{
+  background-color: rgb(231, 225, 225);
+  padding: 15px;
+}
+.diaper1{
+  background-color: white;
+  padding: 25px;
+}
+
