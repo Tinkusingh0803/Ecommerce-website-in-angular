@@ -6,7 +6,8 @@
           <a class="nav-link" aria-current="page">baby</a>
           <a class="nav-link" href="#">baby wish list</a>
           <a class="nav-link" href="#">bestsellers</a>
-          <li class="nav-item">
+
+          <li class="nav-item" *ngFor="let index of diapered">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -15,125 +16,20 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Diapering
+              {{ index.diaper }}
             </a>
             <div
               class="dropdown-menu unavailable"
               aria-labelledby="navbarDropdown"
             >
-              we are sorry, but this feature is currenty, unavailable please try
-              again later
+              {{ index.discription }}
             </div>
           </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              baby care
-            </a>
-            <div
-              class="dropdown-menu unavailable"
-              aria-labelledby="navbarDropdown"
-            >
-              we are sorry, but this feature is currenty, unavailable please try
-              again later
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Feeding
-            </a>
-            <div
-              class="dropdown-menu unavailable"
-              aria-labelledby="navbarDropdown"
-            >
-              we are sorry, but this feature is currenty, unavailable please try
-              again later
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Activity & Entertainment
-            </a>
-            <div
-              class="dropdown-menu unavailable"
-              aria-labelledby="navbarDropdown"
-            >
-              we are sorry, but this feature is currenty, unavailable please try
-              again later
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Bedding, Furniture & room decor
-            </a>
-            <div
-              class="dropdown-menu unavailable"
-              aria-labelledby="navbarDropdown"
-            >
-              we are sorry, but this feature is currenty, unavailable please try
-              again later
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Potty Training
-            </a>
-            <div
-              class="dropdown-menu unavailable"
-              aria-labelledby="navbarDropdown"
-            >
-              we are sorry, but this feature is currenty, unavailable please try
-              again later
-            </div>
-          </li>
-
-          <!-- <a class="nav-link" href="#">baby wish list</a>
-          <a class="nav-link" href="#">bestsellers</a> -->
         </div>
       </div>
     </div>
   </nav>
 </div>
-
 <div class="arrival">
   <div class="container-fluid">
     <div class="row">
@@ -144,25 +40,14 @@
         <br />
         <h6>Department</h6>
         <b> baby</b>
-        <li><a href="#">Activity & Play Time</a></li>
-        <li><a href="#">Baby Care</a></li>
-        <li><a href="#">Baby Clothing</a></li>
-        <li><a href="#">Baby safety</a></li>
-        <li><a href="#">Baby shoes</a></li>
-        <li><a href="#">Dedding furniture & room decor</a></li>
-        <li><a href="#">Car Seats & Accessories</a></li>
-        <li><a href="#">Carriers & Accessories</a></li>
-        <li><a href="#">Diapering & Nappy</a></li>
-        <li><a href="#">Changing</a></li>
-        <li><a href="#">Feeding</a></li>
-        <li><a href="#">Gift Packs</a></li>
-        <li><a href="#">Maternity</a></li>
-        <li><a href="#">Pacifiers & Teethers</a></li>
-        <li><a href="#">Potty Training & Step Stools</a></li>
-        <li><a href="#">Strollers, Buggies & Prams</a></li>
+
+        <div *ngFor="let index of activity">
+          <li>
+            <a href="#">{{ index.last }}</a>
+          </li>
+        </div>
       </div>
       <div class="col-10">
-
         <a href="#">
           <img
             width="100%"
@@ -171,440 +56,110 @@
           />
         </a>
 
-        <!-- <div class="row row-cols-1 row-cols-md-5 g-4 mt-5">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-5 g-4 mt-5">
+          <div class="col" *ngFor="let index of wipe">
             <div class="card h-100">
               <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Set3/D32463504_Slider_tile_set_3_R2_1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="{{ index.image }}" class="card-img-top" alt="..." />
               </a>
               <div class="card-footer">
-                <small class="text-muted">Diapers & wipes </small>
+                <small class="text-muted">{{ index.discription }}</small>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Set3/D32463504_Slider_tile_set_3_R2_2.jpg"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-              <div class="card-footer">
-                <small class="text-muted"> Bath & skin Care </small>
-              </div>
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Set3/D32463504_Slider_tile_set_3_R2_4.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div class="card-footer">
-                <small class="text-muted">Baby travel</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Set3/D32463504_Slider_tile_set_3_R2_3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div class="card-footer">
-                <small class="text-muted">Bedding & nursry</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Set3/D32463504_Slider_tile_set_3_R2_6.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        </div>
 
         <div class="diaper mt-5">
           <div class="diaper1">
-            <h5> Diapers & wipre</h5>
+            <h5>Diapers & wipre</h5>
             <div class="row row-cols-1 row-cols-md-5 g-2">
               <div class="col" *ngFor="let index of data">
                 <div class="card h-100">
                   <a href="#">
                     <img
-                    src="{{index.image}}"
-                    class="card-img-top"
+                      src="{{ index.image }}"
+                      class="card-img-top"
                       alt="..."
                     />
                   </a>
                   <div class="card-footer">
-                    <small class="text-muted">{{index.discription}}</small>
+                    <small class="text-muted">{{ index.discription }}</small>
                   </div>
                 </div>
               </div>
-              <!-- <div class="col">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bathskincar/D32463504_Slider_tile_dipers_set_final_01_05_Beybee._CB628325514_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-                  <div class="card-footer">
-                    <small class="text-muted"> Bath & skin Care </small>
-                  </div>
-
-                </div>
-              </div> -->
-              <!-- <div class="col">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/NEW/D32463504_Slider_tile_dipers_set_final_04._CB650685915_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Baby travel</small>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- <div class="col">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/NEW/D32463504_Slider_tile_dipers_set_final_02._CB650685915_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Bedding & nursry</small>
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="col">
-                <div class="card h-100">
-                  <a href="#"
-                    ><img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/NEW/D32463504_Slider_tile_dipers_set_final_03._CB650685912_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
 
           <!-- start -->
-          <!-- <div class="diaper1">
+          <div class="diaper1">
             <h5>Bath & skin care</h5>
             <div class="row row-cols-1 row-cols-md-5 g-4">
-              <div class="col">
+              <div class="col" *ngFor="let bath of diaper">
                 <div class="card h-100">
                   <a href="#">
                     <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bathskincar/D32463504_Slider_tile_bathskin_set_final_02_Sebamed._CB628325514_.jpg"
+                      src="{{ bath.image }}"
                       class="card-img-top"
                       alt="..."
                     />
                   </a>
                   <div class="card-footer">
-                    <small class="text-muted">Diapers & wipes </small>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bathskincar/D32463504_Slider_tile_bathskin_set_final_02._CB648337110_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-                  <div class="card-footer">
-                    <small class="text-muted"> Bath & skin Care </small>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bathskincar/D32463504_Slider_tile_bathskin_set_final_01._CB648337110_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Baby travel</small>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bathskincar/D32463504_Slider_tile_bathskin_set_final_06._CB648337110_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Bedding & nursry</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <a href="#"
-                    ><img
-                      src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bathskincar/D32463504_Slider_tile_bathskin_set_final_06._CB648337110_.jpg"
-                      class="card-img-top"
-                      alt="..."
-                  /></a>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted">{{ bath.discript }}</small>
                   </div>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- end -->
         </div>
-        <!-- <a href="#">
-          <img
-            width="100%"
-            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/PrimeShoppingWeek/February/D39370445_Prime_Shopping_Deals_baby_R_1500x375.jpg"
-            alt=""
-          />
-        </a> -->
+        <a href="#">
+          <img width="100%" src="{{ babyProduct }}" alt="" />
+        </a>
 
-        <!-- <div class="diaper1">
+        <div class="diaper1">
           <h5>Bedding & nursery</h5>
           <div class="row row-cols-1 row-cols-md-5 g-4">
-            <div class="col">
+            <div class="col" *ngFor="let bedding of bedding">
               <div class="card h-100">
                 <a href="#">
                   <img
-                    src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bedding/D32463504_Slider_tile_dipers_set_final_revisions_01_01._CB648337016_.jpg"
+                    src="{{ bedding.image }}"
                     class="card-img-top"
                     alt="..."
                   />
                 </a>
                 <div class="card-footer">
-                  <small class="text-muted">Diapers & wipes </small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <a href="#">
-                  <img
-                    src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bedding/D32463504_Slider_tile_dipers_set_final_revisions_01_04._CB648337016_.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-                <div class="card-footer">
-                  <small class="text-muted"> Bath & skin Care </small>
-                </div>
-
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <a href="#">
-                  <img
-                    src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bedding/D32463504_Slider_tile_dipers_set_final_revisions_01_06._CB648337016_.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-
-                <div class="card-footer">
-                  <small class="text-muted">Baby travel</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100">
-                <a href="#">
-                  <img
-                    src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/Bedding/D32463504_Slider_tile_dipers_set_final_revisions_01_02._CB648337016_.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-
-                <div class="card-footer">
-                  <small class="text-muted">Bedding & nursry</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <a href="#"
-                  ><img
-                    src="https://images-na.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/NEW/2_bedding._CB628622193_.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">{{ bedding.discription }}</small>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         <!-- end -->
 
-        <!-- <div class="diaper1">
+        <div class="diaper1">
           <h5 class="text-center">shop by age</h5>
           <div class="row row-cols-1 row-cols-md-5 g-0">
-            <div class="col">
+            <div class="col" *ngFor="let shop of shopByAge">
               <div class="card h-100 border-0">
                 <a href="#">
-                  <img
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/ShopbyAge/FinalPC/ShopByAge-Baby_pc_final_01.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="{{ shop.image }}" class="card-img-top" alt="..." />
                 </a>
               </div>
             </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <a href="#">
-                  <img
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/ShopbyAge/FinalPC/ShopByAge-Baby_pc_final_02.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-
-
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <a href="#">
-                  <img
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/ShopbyAge/FinalPC/ShopByAge-Baby_pc_final_03.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 border-0">
-                <a href="#">
-                  <img
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/ShopbyAge/FinalPC/ShopByAge-Baby_pc_final_04.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border-0">
-                <a href="#"
-                  ><img
-                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/ShopbyAge/FinalPC/ShopByAge-Baby_pc_final_05.jpg"
-                    class="card-img-top"
-                    alt="..."
-                /></a>
-              </div>
-            </div>
           </div>
-        </div> -->
+        </div>
         <!-- end -->
 
-        <!-- <div class="row row-cols-1 row-cols-md-5 g-0 mt-3">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-5 g-0 mt-3">
+          <div class="col" *ngFor="let best of bestSeller">
             <div class="card h-100 border-0">
               <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/SmallTiles/D32463504_Smalltiles_1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="{{ best.image }}" class="card-img-top" alt="..." />
               </a>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100 border-0">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/SmallTiles/D32463504_Smalltiles_4_New.jpg"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 border-0">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/SmallTiles/D32463504_Smalltiles_3_New.jpg"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 border-0">
-              <a href="#">
-                <img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/SmallTiles/D32463504_Smalltiles_5.jpg"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 border-0">
-              <a href="#"
-                ><img
-                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FNovember/BabyStore/SmallTiles/D32463504_Smalltiles_2.jpg"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-            </div>
-          </div>
-        </div> -->
+        </div>
         <!-- end -->
       </div>
     </div>
